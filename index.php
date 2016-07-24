@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <title>MeteoAxl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-size: cover;
-            background-repeat: no-repeat;
-            font-family: sans-serif;
-            color: #fff;
-            text-align: center;
-        }
-        h1 {
-            text-shadow: 0 0 10px rgba(0,0,0,.5)
-        }
-    </style>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-    <h1></h1>
+    <h1>#MeteoAxl</h1>
+    <main>
+        <i id="content-icon"></i>
+        <span id="content"></span>
+    </main>
+    <footer>
+        <a href="https://github.com/nuria-fl/meteoaxl"><i class="fa fa-github"></i> @nuria-fl</a>
+        &nbsp; | &nbsp;
+        <a href="https://twitter.com/pincfloit"><i class="fa fa-twitter"></i> @pincfloit</a>
+    </footer>
     <?php
     ini_set('display_errors', 1);
     require_once('TwitterAPIExchange.php');
@@ -41,15 +40,11 @@
                  ->performRequest();
     ?>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="dist/scripts.min.js"></script>
     <script>
         var json = <?php echo $request ?>;
-        var lastTweet = json.statuses[0];
-        console.log(lastTweet)
-        var img = lastTweet.entities.media[0].media_url;
-        $('body').css('background-image', 'url("' + img + '")')
-        var cleanText = lastTweet.text.split('http')[0];
-        $('h1').text(cleanText)
-        
+        loadMeteo(json)
     </script>
 </body>
 </html>

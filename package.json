@@ -1,0 +1,29 @@
+{
+  "name": "meteoaxl",
+  "version": "0.0.2",
+  "description": "weather app using Twitter API",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuria-fl/meteoaxl.git"
+  },
+  "author": "nuria-fl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuria-fl/meteoaxl/issues"
+  },
+  "homepage": "https://github.com/nuria-fl/meteoaxl#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}

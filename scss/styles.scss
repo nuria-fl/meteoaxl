@@ -1,0 +1,44 @@
+html {
+	height: 100%
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    min-height: 100%;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+h1 {
+	margin: 0;
+	padding-top: 1em;
+    text-shadow: 0 0 10px rgba(0,0,0,.5)
+}
+main {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-1em, -50%);
+	font-size: 2em;
+	font-weight: 700;
+	i {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+footer {
+	padding-bottom: 1em;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
