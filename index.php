@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@oreidoefecto">
+    <meta name="twitter:creator" content="@pincfloit">
+    <meta name="twitter:title" content="MeteoAxl">
+    <meta id="metaDesc" name="twitter:description" content="Weather info brought to you by MeteoAxl!">
+    <meta id="metaImg" name="twitter:image" content="http://nuriasatorres.com/meteoaxl/img/meteoaxl.jpg">
+
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
